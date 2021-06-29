@@ -19,7 +19,7 @@ app.use((req, res, next) => {
     res.send({ message: "Invalid " + req.url })
 })
 
-// error handling
+// error handling on all files
 app.use((err, req, res, next) => {
     res.send({ message: "error is " + err.message })
 })
